@@ -1,0 +1,82 @@
+{
+  "mortgage": {
+    "parent": "nondiscretionary"
+  },
+  "maintenance": {
+    "parent": "nondiscretionary"
+  },
+  "tax": {
+    "parent": "nondiscretionary"
+  },
+  "telecommunications": {
+    "parent": "nondiscretionary"
+  },
+  "hydro": {
+    "parent": "nondiscretionary"
+  },
+  "clothes": {
+    "parent": "nondiscretionary"
+  },
+  "housecrap": {
+    "parent": "nondiscretionary"
+  },
+  "groceries": {
+    "parent": "nondiscretionary"
+  },
+  "investment": {},
+  "car": {
+    "parent": "transport"
+  },
+  "publictransit": {
+    "parent": "transport"
+  },
+  "insurance": {
+    "parent": "transport"
+  },
+  "wedding": {
+    "parent": "onetime"
+  },
+  "vacation": {
+    "parent": "onetime"
+  },
+  "entertainment": {
+    "parent": "discretionary"
+  },
+  "tkd": {
+    "parent": "discretionary"
+  },
+  "fastfood": {
+    "parent": "discretionary"
+  },
+  "barbershop": {
+    "parent": "discretionary"
+  },
+  "donations": {},
+  "servicecharge": {},
+  "parents": {
+    "redeemable": true,
+    "parent": "redeemable"
+  },
+  "pay": {
+    "spend": false
+  },
+  "transfer": {
+    "spend": false
+  },
+  "redemption": {
+    "spend": false
+  },
+  "health": {
+    "redeemable": true,
+    "parent": "redeemable"
+  },
+  "travel": {
+    "redeemable": true,
+    "parent": "redeemable"
+  },
+  "discretionary": {},
+  "nondiscretionary": {},
+  "onetime": {},
+  "transport": {},
+  "redeemable": {}
+}
