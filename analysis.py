@@ -24,14 +24,16 @@ def fill_transactions(db, ods_file):
 
 def fill_taxonomy(db, json_file):
   c = db.cursor()
-  c.execute('CREATE TABLE IF NOT EXISTS full_taxonomy (id TEXT, parent TEXT, spend INTEGER, redeemable INTEGER)')
+  c.execute('CREATE TABLE IF NOT EXISTS full_taxonomy (id TEXT, parent TEXT, name TEXT, spend INTEGER, redeemable INTEGER)')
   c.execute('CREATE VIEW IF NOT EXISTS taxonomy AS SELECT * FROM full_taxonomy WHERE spend = 1')
   with open(json_file) as json_file:
     data = json.load(json_file)
 
     for key, value in data.items():
-      c.execute('INSERT INTO full_taxonomy VALUES (?, ?, ?, ?)',
-        (key, value.get('parent', None),
+      c.execute('INSERT INTO full_taxonomy VALUES (?, ?, ?, ?, ?)',
+        (key,
+        value.get('parent', None),
+        value.get('name'),
         1 if value.get('spend', True) else 0,
         1 if value.get('redeemable', False) else 0))
   

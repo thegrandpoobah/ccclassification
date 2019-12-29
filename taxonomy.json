@@ -1,85 +1,159 @@
 {
   "mortgage": {
-    "parent": "nondiscretionary"
+    "parent": "nondiscretionary",
+    "name": "Mortgage"
   },
   "maintenance": {
-    "parent": "nondiscretionary"
+    "parent": "nondiscretionary",
+    "name": "Maintenance"
   },
   "tax": {
-    "parent": "nondiscretionary"
+    "parent": "nondiscretionary",
+    "name": "Taxes"
   },
   "telecommunications": {
-    "parent": "nondiscretionary"
+    "parent": "nondiscretionary",
+    "name": "Telecommunications"
   },
   "hydro": {
-    "parent": "nondiscretionary"
+    "parent": "nondiscretionary",
+    "name": "Hydro"
   },
   "clothes": {
-    "parent": "nondiscretionary"
+    "parent": "nondiscretionary",
+    "name": "Clothes"
   },
   "housecrap": {
-    "parent": "nondiscretionary"
+    "parent": "nondiscretionary",
+    "name": "Houseware"
   },
   "groceries": {
-    "parent": "nondiscretionary"
+    "parent": "nondiscretionary",
+    "name": "Groceries"
   },
-  "investment": {},
+  "investment": {
+    "name": "Investments"
+  },
   "car": {
-    "parent": "transport"
+    "parent": "transport",
+    "name": "Car"
   },
   "publictransit": {
-    "parent": "transport"
+    "parent": "transport",
+    "name": "Transit"
   },
   "insurance": {
-    "parent": "transport"
+    "parent": "car",
+    "name": "Insurance"
+  },
+  "gas": {
+    "parent": "car",
+    "name": "Gas"
+  },
+  "carpayment": {
+    "parent": "car",
+    "name": "Lease"
   },
   "wedding": {
-    "parent": "onetime"
+    "parent": "onetime",
+    "name": "Wedding"
   },
   "vacation": {
-    "parent": "onetime"
+    "parent": "onetime",
+    "name": "Vacations"
+  },
+  "vegas": {
+    "parent": "vacation",
+    "name": "MA Supershow"
+  },
+  "honeymoon": {
+    "parent": "vacation",
+    "name": "Honeymoon"
+  },
+  "kingston": {
+    "parent": "vacation",
+    "name": "Kingston"
+  },
+  "gravenhurst": {
+    "parent": "vacation",
+    "name": "Gravenhurst"
+  },
+  "bluemountain": {
+    "parent": "vacation",
+    "name": "Blue Mountain"
   },
   "entertainment": {
-    "parent": "discretionary"
+    "parent": "discretionary",
+    "name": "Entertainment"
   },
   "tkd": {
-    "parent": "discretionary"
+    "parent": "discretionary",
+    "name": "TKD"
   },
   "fastfood": {
-    "parent": "discretionary"
+    "parent": "discretionary",
+    "name": "Fast Food"
   },
   "barbershop": {
-    "parent": "discretionary"
+    "parent": "discretionary",
+    "name": "Barbershop"
   },
   "cash": {
-    "parent": "discretionary"
+    "parent": "discretionary",
+    "name": "Cash Spending"
   },
-  "donations": {},
-  "servicecharge": {},
+  "donations": {
+    "parent": "other",
+    "name": "Donations"
+  },
+  "servicecharge": {
+    "parent": "other",
+    "name": "Service Charges"
+  },
   "parents": {
     "redeemable": true,
-    "parent": "redeemable"
+    "parent": "redeemable",
+    "name": "Parents"
   },
   "pay": {
-    "spend": false
+    "spend": false,
+    "name": "Salary"
   },
   "transfer": {
-    "spend": false
+    "spend": false,
+    "name": "Interaccount Transfer"
   },
   "redemption": {
-    "spend": false
+    "spend": false,
+    "name": "Redemption"
   },
   "health": {
     "redeemable": true,
-    "parent": "redeemable"
+    "parent": "redeemable",
+    "name": "Health"
   },
   "travel": {
     "redeemable": true,
-    "parent": "redeemable"
+    "parent": "redeemable",
+    "name": "Work Travel"
   },
-  "discretionary": {},
-  "nondiscretionary": {},
-  "onetime": {},
-  "transport": {},
-  "redeemable": {}
+  "discretionary": {
+    "name": "Discretionary"
+  },
+  "nondiscretionary": {
+    "name": "Non-Discretionary"
+  },
+  "onetime": {
+    "name": "One Time"
+  },
+  "transport": {
+    "name": "Transportation"
+  },
+  "redeemable": {
+    "redeemable": true,
+    "name": "Redeemable"
+  },
+  "other": {
+    "name": "Other"
+  }
 }
