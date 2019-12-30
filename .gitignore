@@ -130,4 +130,5 @@ dmypy.json
 
 cc.model
 data/*.ods
+data/*.json
 .DS_Store
