@@ -1,0 +1,61 @@
+{
+  "mortgage": {
+    "parent": "nondiscretionary",
+    "name": "Mortgage"
+  },
+  "tax": {
+    "parent": "nondiscretionary",
+    "name": "Taxes"
+  },
+  "investment": {
+    "name": "Investments"
+  },
+  "car": {
+    "parent": "transport",
+    "name": "Car"
+  },
+  "publictransit": {
+    "parent": "transport",
+    "name": "Transit"
+  },
+  "insurance": {
+    "parent": "car",
+    "name": "Insurance"
+  },
+  "gas": {
+    "parent": "car",
+    "name": "Gas"
+  },
+  "carpayment": {
+    "parent": "car",
+    "name": "Lease"
+  },
+  "entertainment": {
+    "parent": "discretionary",
+    "name": "Entertainment"
+  },
+  "fastfood": {
+    "parent": "discretionary",
+    "name": "Fast Food"
+  },
+  "pay": {
+    "spend": false,
+    "name": "Salary"
+  },
+  "travel": {
+    "parent": "redeemable",
+    "name": "Work Travel"
+  },
+  "discretionary": {
+    "name": "Discretionary"
+  },
+  "nondiscretionary": {
+    "name": "Non-Discretionary"
+  },
+  "transport": {
+    "name": "Transportation"
+  },
+  "redeemable": {
+    "name": "Redeemable"
+  }
+}
