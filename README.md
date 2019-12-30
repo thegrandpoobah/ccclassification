@@ -6,6 +6,12 @@ This is a set of tools that we use to classify the transactions in our household
 2. It constructs a spend cube visualization of the data in the statements in a Jupyter Notebook.
 3. It compares monthly spending to an allocated monthly budget.
 
+## To get started
+
+Probably the easiest way to get started is by using the [Anaconda](https://www.anaconda.com/) distribution of Python and Jupyter Notebook. Install Anaconda as a first step.
+
+Clone this repository and load the dependencies: `pip install -r requirements.txt`
+
 ## Classification
 
 To use the classification model, you will have to follow 4 basic steps
@@ -19,4 +25,24 @@ The classification tool is far from perfect, but I found verifying and correctin
 
 ## Analysis
 
-## 
+Once all the transactions have been classified, you can create a taxonomy of the spend categories. Again, there is [a template provided in the repository](taxonomy.template.json) that you can use as a starting point. But in short, each spend category that you have assigned to your transactions, needs a classification in the JSON file like so:
+
+```js
+"id": { /* should match up to a transaction category */
+  "name": "Human Readable Category Name", /* what will be displayed in the Jupyter Notebook */
+  "parent": "parent_category_id", /* each category can have a parent category if you want to create a hierarchical spend cube */
+  "spend": true, /* should this category type be considered spending.. defaults to true, but things like automatic deposits from paystubs or health benefits should be false */
+}
+```
+
+Once this taxonomy is created, you can use the [provided Jupyter Notebook](analyze.ipynb) to look over your spending across three axis:
+
+1. Month by Month spending across all categories
+2. Categorized Spending across the entire time period (i.e. hierarchical spending cube)
+3. Spend Breakdown
+
+Just change the files where the Jupyter Notebook is pulling its data from to match the files you have created and go from there.
+
+## Budgeting
+
+More to come!
