@@ -45,4 +45,13 @@ Just change the files where the Jupyter Notebook is pulling its data from to mat
 
 ## Budgeting
 
-More to come!
+You can optionally specify a per month budget for each spend category and the analysis notebook will compute a rolling budget for each month. The budget amount is specified in cents.
+
+```js
+"id": { /* should match up to a transaction category */
+  "name": "Human Readable Category Name", /* what will be displayed in the Jupyter Notebook */
+  "parent": "parent_category_id", /* each category can have a parent category if you want to create a hierarchical spend cube */
+  "spend": true, /* should this category type be considered spending.. defaults to true, but things like automatic deposits from paystubs or health benefits should be false */
+  "budget": 50000 /* the monthly budget allocated to this category. The number is specified in pennies.
+}
+```

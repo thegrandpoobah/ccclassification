@@ -24,11 +24,13 @@
   },
   "gas": {
     "parent": "car",
-    "name": "Gas"
+    "name": "Gas",
+    "budget": 15000
   },
   "carpayment": {
     "parent": "car",
-    "name": "Lease"
+    "name": "Lease",
+    "budget": 20000
   },
   "entertainment": {
     "parent": "discretionary",
