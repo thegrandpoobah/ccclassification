@@ -51,11 +51,11 @@ def fill_taxonomy(db, json_file):
         data = json.load(json_file)
 
         for key, value in data.items():
-            c.execute('INSERT INTO full_taxonomy VALUES (?, ?, ?, ?, ?, ?)',
+            c.execute('INSERT INTO full_taxonomy VALUES (?, ?, ?, ?, ?)',
                       (key,
                        value.get('parent', None),
                        value.get('name'),
-                       1 if value.get('spend', True) else 0),
-                      value.get('budget', None))
+                       1 if value.get('spend', True) else 0,
+                       value.get('budget', None)))
 
     db.commit()
